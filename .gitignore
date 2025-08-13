@@ -1,27 +1,21 @@
-﻿# Ignorar todo (raíz)
-*/
+﻿# --- Node / sesiones Baileys ---
+bot-wasap/baileys_auth/
+node_modules/
 
-# Permitir las carpetas padre para hacer excepciones internas
-!bot-wasap/
-!inventario_wasap/
+# --- Python/Django ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+db.sqlite3
 
-# En bot-wasap: ignora todo y permite SOLO index.js
-bot-wasap/*
-!bot-wasap/index.js
+# --- Secretos ---
+service_account.json
+.env
+*.key
+*.pem
 
-# En inventario_wasap: ignora todo y permite SOLO la carpeta inventario/
-inventario_wasap/*
-!inventario_wasap/inventario/
-
-# Basura común que nunca queremos subir
-**/node_modules/
-**/__pycache__/
-**/.venv/
-**/venv/
-**/*.log
-**/*.sqlite3
-**/db.sqlite3
-**/.env
-**/service_account.json
-**/dist/
-**/build/
+# --- builds temporales ---
+dist/
+build/
