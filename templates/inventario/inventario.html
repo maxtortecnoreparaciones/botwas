@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventario en Tiempo Real</title>
+</head>
+<body>
+    <h2>Inventario Disponible</h2>
+    <table border="1">
+        <tr>
+            <th>Código</th>
+            <th>Producto</th>
+            <th>Stock_Actual</th>
+            <th>Precio_Venta</th>
+            <th>Acción</th>
+        </tr>
+        {% for item in inventario %}
+        <tr>
+            <td>{{ item.Código }}</td>
+            <td>{{ item.Producto }}</td>
+            <td>{{ item.Stock_Actual }}</td>
+            <td>{{ item.Precio_Venta }}</td>
+            <td><a href="#">Vender</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
