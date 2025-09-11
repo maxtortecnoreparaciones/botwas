@@ -1,0 +1,40 @@
+{
+  "general": {
+    "greetings": [
+      "¡Hola! 👋",
+      "¡Hola! ¿En qué te puedo ayudar hoy? 😊",
+      "¡Qué tal! Bienvenido a Service Store VIP, ¿en qué te puedo ayudar?"
+    ],
+    "farewells": [
+      "¡Que tengas un excelente día! Recuerda que puedes volver cuando quieras.",
+      "¡Hasta luego! Si necesitas algo más, no dudes en escribirnos.",
+      "¡Gracias por tu visita! Vuelve pronto."
+    ]
+  },
+  "sales_objections": [
+    {
+      "keywords": ["cuanto cobra", "precio", "costo", "valor"],
+      "intent": "precio_general",
+      "prompt": "El cliente pregunta por el precio general. No le des un precio fijo, en su lugar, pregúntale sobre su negocio para identificar una oportunidad.",
+      "response_template": "El precio por un asistente virtual varía según las funciones que necesites. ¿Podrías contarme un poco más sobre tu negocio? Así puedo darte un presupuesto exacto. ¿Se trata de ventas, servicio al cliente o algo más?"
+    },
+    {
+      "keywords": ["negocio", "sushi", "restaurante", "bar"],
+      "intent": "consulta_de_negocio",
+      "prompt": "El cliente está intentando dar contexto sobre su tipo de negocio (ej. sushi vegano). Reconoce esto y haz una pregunta relevante para su industria.",
+      "response_template": "¡Claro! Un asistente virtual es perfecto para un negocio de comida. ¿Se usaría para tomar pedidos, mostrar el menú del día o responder a preguntas sobre los ingredientes?"
+    },
+    {
+      "keywords": ["instagram", "link", "perfil", "pagina"],
+      "intent": "envio_de_enlace",
+      "prompt": "El cliente te envió un enlace. Reconoce que es un perfil de Instagram o una página de negocio. No le pidas que te diga qué es, pregúntale por un problema que tu bot pueda resolver.",
+      "response_template": "Gracias por compartirme el perfil. Entiendo que es tu negocio. ¿Cuál es el mayor desafío que tienes hoy con los mensajes de tus clientes en redes sociales?"
+    },
+    {
+      "keywords": ["competencia", "xuanro"],
+      "intent": "pregunta_sobre_competencia",
+      "prompt": "El cliente pregunta sobre otro negocio o competencia. Responde que no tienes información de otros negocios, y redirige la conversación a tus servicios.",
+      "response_template": "No tengo información sobre otros negocios. Sin embargo, si me cuentas qué buscas, puedo mostrarte cómo nuestros productos pueden ayudarte."
+    }
+  ]
+}
